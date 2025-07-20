@@ -1,15 +1,29 @@
 {
   "name": "poke_cli",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "ポケモンバトルCLIゲーム",
+  "main": "main.js",
+  "bin": {
+    "poke-battle": "main.js"
+  },
   "scripts": {
+    "build": "tsc",
+    "start": "node main.js",
+    "dev": "tsc && node main.js",
+    "clean": "rm -f *.js *.d.ts *.js.map *.d.ts.map",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "pokemon",
+    "cli",
+    "game",
+    "battle",
+    "typescript"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.0.0",
     "typescript": "^5.8.3"
   }
 }
